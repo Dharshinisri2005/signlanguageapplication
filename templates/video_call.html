@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignConnect - Video Call</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>SignConnect</header>
+    <main>
+        <section class="video-section">
+            <video id="localVideo" autoplay muted></video>
+            <div class="action-text">Recognized ASL Action: <span id="action">None</span></div>
+        </section>
+        <section class="controls">
+            <button onclick="mute()">Mute/Unmute</button>
+            <button onclick="endCall()">End Call</button>
+            <a href="/settings">Settings</a>
+        </section>
+    </main>
+</body>
+<script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+<script src="/static/script.js"></script>
+</html>

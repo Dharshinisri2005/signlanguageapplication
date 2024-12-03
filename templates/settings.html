@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignConnect - Settings</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Settings</h1>
+    </header>
+    <main>
+        <section class="settings-section">
+            <h2>Adjust Your Settings</h2>
+            <div class="settings-item">
+                <label for="videoQuality">Video Quality</label>
+                <select id="videoQuality">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+            <div class="settings-item">
+                <label for="language">Sign Language Preferences</label>
+                <select id="language">
+                    <option value="asl">American Sign Language (ASL)</option>
+                    <option value="bsl">British Sign Language (BSL)</option>
+                    <option value="lsf">French Sign Language (LSF)</option>
+                </select>
+            </div>
+            <div class="settings-item">
+                <label for="audioToggle">Enable Audio</label>
+                <input type="checkbox" id="audioToggle">
+            </div>
+            <button onclick="saveSettings()">Save Settings</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 SignConnect</p>
+    </footer>
+    <script>
+        function saveSettings() {
+            alert('Settings saved!');
+            // Add functionality to save the settings, e.g., store in localStorage or send to the server
+        }
+    </script>
+</body>
+</html>
